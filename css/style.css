@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* font-family: 'Permanent Marker', cursive; */
+
+:root{
+    --rojo: #bb0909; 
+}
+
+* {
+    margin: 0%;
+    padding: 0;
+}
+body{
+    margin: 0;
+    
+}
+
+header{
+    background: url("../assets/fondo_header.jpg");
+    background-repeat: space;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    padding: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo a{
+    width: 150px;
+}
+
+header img{
+    margin-left: 50px;
+    height: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    margin: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li a:hover{
+    color: var(--rojo);
+}
