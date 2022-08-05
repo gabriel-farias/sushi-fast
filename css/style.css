@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+@font-face{ 
+	font-family: 'japanese_touristregular';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
 /* font-family: 'Indie Flower', cursive; */
 
 :root{
@@ -22,9 +31,8 @@ header{
     height: 150px;
     display: flex;
     padding: 20px;
-    font-family: 'Indie Flower', cursive;
-    font-size: 18px;
-    font-weight: bold;
+    font-family: 'japanese_touristregular', cursive;
+    font-size: 1.8em;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -40,7 +48,7 @@ header{
 }
 
 header img{
-    margin-left: 50px;
+    margin-left: 3em;
     height: 100px;
 }
 
@@ -50,6 +58,9 @@ header img{
 }
 
 .navbar ul{
+    font-family: 'Indie Flower', cursive;
+    font-size: .6em;
+    font-weight: 600;
     list-style: none;
     display: flex;
 }
