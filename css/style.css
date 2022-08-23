@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 @font-face{ 
-	font-family: 'japanese_touristregular';
+    font-family: 'japanese_touristregular';
 	src: url('WebFont.eot');
 	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-	     url('WebFont.woff') format('woff'),
-	     url('WebFont.ttf') format('truetype'),
-	     url('WebFont.svg#webfont') format('svg');
+    url('WebFont.woff') format('woff'),
+    url('WebFont.ttf') format('truetype'),
+    url('WebFont.svg#webfont') format('svg');
 }
-
-/* font-family: 'Indie Flower', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Indie Flower', cursive; 
+   font-family: 'Poppins', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+*/
 
 :root{
     --rojo: #bb0909; 
+    --bg: #000000;
+    --verde:#9ECB3C;
 }
 
 * {
@@ -25,53 +30,187 @@ body{
 }
 
 header{
-    background: url("../assets/fondo_header.jpg");
-    background-repeat: space;
-    background-size: cover;
-    height: 150px;
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 90px;
+    width: 100%;
+    color: white;
     display: flex;
-    padding: 20px;
-    font-family: 'japanese_touristregular', cursive;
+    padding: 10px 20px;
     font-size: 1.8em;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    
 }
 
-.logo{
-    width: 30%;
+.header__logo{
+    width: 50%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    font-family: 'japanese_touristregular', cursive;
 }
-.logo a{
-    width: 150px;
+.header__logo a{
+    width: 120px;
 }
 
-header img{
-    margin-left: 3em;
-    height: 100px;
+.header__image{
+    margin-left: 1em;
+    height: 80px;
+}
+.menu-button{
+    display: none;
+    /* display: flex;
+    flex-direction: column;   <----  para el responsive*/
+    margin: 0 auto;
+    width: 40px;
+    height: 36px;
+}
+.menu-toggle{
+    display:none;
+}
+
+.toggle{
+    display: none;
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    
+}
+.toggle li{
+    display: block;
+    list-style: none;
+    font-size: .6em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.toggle li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-toggle:checked + .toggle{
+    display: block;
 }
 
 .navbar{
     display: flex;
     align-items: center;
+    padding-right: 50px;
 }
 
-.navbar ul{
-    font-family: 'Indie Flower', cursive;
-    font-size: .6em;
-    font-weight: 600;
+.navbar__container--list{ 
     list-style: none;
     display: flex;
 }
-.navbar ul li{
+.navbar__container--list li{
+    font-family: 'Montserrat', sans-serif;
     margin: 10px;
+    font-size: .6em;
+    font-weight: 600;
 }
 
-.navbar ul li a{
+.navbar__container--list li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
-.navbar ul li a:hover{
-    color: var(--rojo);
+.navbar__container--list li a:hover{
+    color: var(--verde);
+}
+/* Fin del Header */
+/* Aca arranca el Hero */
+.hero{
+    background:url('../assets/home-images-unlimited-a-la-carte.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 010px 10px 200px rgb(0, 0, 0) inset;
+    display:flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+.container__herotext{
+    margin: 50px;
+    border-radius: 25px;
+    width: 60%;
+    background-color: #000000e0; 
+    display: flex;
+    gap: 50px;
+    padding:  30px ;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    color: white;
+    
+}
+.herotext{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+}
+.herotext__tittle{
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+.herotext__info{
+    font-weight: 400;
+    font-size:  1.1em;
+
+}
+.container__botones{
+    display: flex;
+    justify-content: space-around;
+}
+.boton-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 15px;
+    background-color: #30302f;
+    font-weight: 600;
+    
+}
+
+.boton-menu a:hover{
+    background: var(--rojo);
+    cursor:pointer;
+    
+}
+.container__image{
+    width: 50%;
+}
+.container__image img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* aca arranca el section */
+
+.container-info{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.info-section{
+    background: #30302f;
+    background: url(/assets/cerveza-japonesa.jpg);
+    box-shadow: 010px 10px 200px rgb(0, 0, 0) inset;
+    padding: 20px 60px;
+    border-radius: 15px;
+    border: 1px solid var(--verde);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    width: 60%;
+    font-weight: 400;
+    font-size:  1.1em;
 }

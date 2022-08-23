@@ -5,25 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href=".//css/style.css" />
-    <link rel="stylesheet" href=".//css/stylesheet.css" type="text/css" charset="utf-8" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href=".//css/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Sushi Fast - Japanese Food -</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <a href="">
-          <img src="./assets/logo.png" alt="" />
+      <div class="header__logo">
+        <a href="#">
+          <img class="header__image" src="./assets/logo.png" alt="" />
         </a>
         <p>Sushi Fast - Japanese Food</p>
-      </div>      
+      </div>
       <nav class="navbar">
-        <ul>
+        <label for="menu-toggle">
+          <div class="menu-button">
+            <img
+              src="./assets/burguer.png"
+              alt="menu-hamburguesa"
+              class="header__burguer--logo"
+            />
+          </div>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <ul class="toggle">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Menu</a></li>
-          <li><a href="#">Take Away</a> </li>
-          <li><a href="#">Contactanos</a></li>
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+        </ul>
+        <ul class="navbar__container--list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
         </ul>
       </nav>
     </header>
+    <!-- Fin del Header -->
+    <!-- Comienzo del Hero -->
+    <main class="hero">
+      <div class="container__herotext">
+        <div class="herotext">
+          <h1 class="herotext__title">Somos Sushi Fast</h1>
+          <p class="herotext__info">
+            Te traemos la mejor comida japonesa hecha por los mejores chefs de
+            argentina , con atencion rapida para que uses tu tiempo en
+            disfrutando de una excelente experiencia culinaria y no esperar por
+            el pedido.Hay muchos platillos fuera de lo comun que te
+            sorprenderán, pero tambien encontraras tus platillos favoritos de la
+            comida japonesa.
+          </p>
+          <div class="container__botones">
+            <div class="boton-menu">
+              <a href="#">Ir al menu</a>
+            </div>
+            <div class="boton-menu">
+              <a href="#">Hace tu reserva</a>
+            </div>
+          </div>
+        </div>
+        <div class="container__image">
+          <img src="./assets/sushiimage.jpg" alt="foto-sushi" />
+        </div>
+      </div>
+    </main>
+    <!-- Fin del Header -->
+    <!-- Comienzo del section -->
+    <section class="container-info">
+      <p class="info-section">
+        Para los amantes de la birra japonesa, te ofrecemos una gran variedad de
+        cervezas de barril y de botella, con una atenta selección de la mejor
+        calidad. <br />
+        Porque la comida japonesa no tiene por que ser cara, te ofrecemos los
+        mejores precios en la mejor calidad.
+      </p>
+    </section>
   </body>
 </html>
