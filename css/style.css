@@ -96,6 +96,7 @@ header{
 }
 .menu-toggle:checked + .toggle{
     display: block;
+    
 }
 
 .navbar{
@@ -260,9 +261,7 @@ header{
     width: 48px;
 }
 
-.card-tittle{
 
-}
 .card-info{
     text-align: center;
     font-weight: 400;
