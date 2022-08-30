@@ -19,6 +19,13 @@
     .container__image{
         width: 90%;
     }
+    footer{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .contact{
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -49,6 +56,15 @@
     }
     .hero{
         padding-top: 110px;
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+    .sucursales{
+        flex-wrap: wrap;
+    }
+    .foto-resto{
+        width: 100vw;
     }
 }
 @media screen and (max-width: 576px) {
